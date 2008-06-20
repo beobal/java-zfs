@@ -1,0 +1,6 @@
+org.jvnet.solaris.avl
+org.jvnet.solaris.jna
+org.jvnet.solaris.mount
+org.jvnet.solaris.libzfs.jna
+org.jvnet.solaris.libzfs
+org.jvnet.solaris.nvlist.jna

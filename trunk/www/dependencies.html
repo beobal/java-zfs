@@ -11,7 +11,7 @@
 
 <html>
   <head>
-    <title>libzfs for Java - </title>
+    <title>libzfs for Java - Project Dependencies</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -31,7 +31,7 @@
         <dd><ul>
               
     <li class="none">
-              <strong>Overview</strong>
+              <a href="index.html">Overview</a>
         </li>
               
     <li class="none">
@@ -63,7 +63,7 @@
               
       
             
-      
+            
             
       
             
@@ -77,9 +77,43 @@
             
       
               
-        <li class="collapsed">
+            <li class="expanded">
               <a href="project-info.html">Project Information</a>
-              </li>
+                <ul>
+                  
+    <li class="none">
+              <a href="integration.html">Continuous Integration</a>
+        </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="issue-tracking.html">Issue Tracking</a>
+        </li>
+                  
+    <li class="none">
+              <a href="mail-lists.html">Mailing Lists</a>
+        </li>
+                  
+    <li class="none">
+              <a href="license.html">Project License</a>
+        </li>
+                  
+    <li class="none">
+              <a href="project-summary.html">Project Summary</a>
+        </li>
+                  
+    <li class="none">
+              <a href="team-list.html">Project Team</a>
+        </li>
+                  
+    <li class="none">
+              <a href="source-repository.html">Source Repository</a>
+        </li>
+              </ul>
+        </li>
               
                 
               
@@ -120,23 +154,78 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <p>This project develops a Java wrapper of <a href="http://www.opensolaris.org/os/community/zfs/" class="externalLink">libzfs</a>
-, which is a native library in Solaris to manipulate ZFS. The goal is to expose all the capabilities of <tt>libzfs</tt>
- in Java-friendly binding.</p>
-<p>With this library, you can write a program like the following to create a new file system:</p>
-<div class="source"><pre>LibZFS zfs = new LibZFS();
-ZFSObject newFS = zfs.create(&quot;rpool/kohsuke/test&quot;, ZFSType.FILESYSTEM);
-newFS.mount();</pre>
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>net.java.dev.jna</td>
+<td>jna</td>
+<td>3.0.3-patch-1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
 </div>
-<p>... or to destroy it:</p>
-<div class="source"><pre>ZFSObject fs = zfs.open(&quot;rpool/kohsuke/test&quot;);
-fs.unmount();
-fs.destory();</pre>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>junit</td>
+<td>junit</td>
+<td>3.8.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
 </div>
-<p>... or any other things you can do with <tt>libzfs</tt>
-, like querying file system information, create snapshots and/or clones, roll back, etc., etc.</p>
-<p>The project is still very much a work in progress. If you are interested in helping us, please let us know so that we can add you as a committer. This project depends on <a href="https://jna.dev.java.net/" class="externalLink">JNA</a>
- to bridge to the native code, so no JNI experience is required to hack the project.</p>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<div class="section"><h3>Dependency Tree</h3>
+<p><ul><li><a href="#org.jvnet.libzfs:libzfs:jar">org.jvnet.libzfs:libzfs:jar</a>
+<ul><li><a href="#junit:junit:jar">junit:junit:jar</a>
+</li>
+<li><a href="#net.java.dev.jna:jna:jar">net.java.dev.jna:jna:jar</a>
+</li>
+</ul>
+</p>
+</li>
+</ul>
+</p>
+</div>
+<div class="section"><h3>Dependency Listings</h3>
+<p><a name="org.jvnet.libzfs:libzfs:jar"><b>libzfs-java</b>
+</a>
+</p>
+<p>libzfs for Java</p>
+<p><a href="https://zfs.dev.java.net/" class="externalLink">https://zfs.dev.java.net/</a>
+</p>
+<p><a name="junit:junit:jar"><b>JUnit</b>
+</a>
+</p>
+<p>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><a href="http://junit.org" class="externalLink">http://junit.org</a>
+</p>
+<p><a name="net.java.dev.jna:jna:jar"><b>Java Native Access</b>
+</a>
+</p>
+</div>
+</div>
 
       </div>
     </div>

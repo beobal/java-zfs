@@ -1,0 +1,17 @@
+-classpath '/home/kohsuke/ws/libzfs-java/target/classes:/home/kohsuke/.m2/repository/net/java/dev/jna/jna/3.0.3-patch-1/jna-3.0.3-patch-1.jar'
+ -protected
+-sourcepath
+'/home/kohsuke/ws/libzfs-java/src/main/java'
+-author
+-bottom
+'Copyright © 2008. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/home/kohsuke/ws/libzfs-java/target/site/apidocs'
+-doctitle
+'libzfs-java 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'libzfs-java 1.0-SNAPSHOT API'
