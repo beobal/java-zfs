@@ -1,17 +1,19 @@
--classpath '/home/kohsuke/ws/libzfs-java/target/classes:/home/kohsuke/ws/libzfs-java/target/test-classes:/home/kohsuke/.m2/repository/net/java/dev/jna/jna/3.0.3-patch-1/jna-3.0.3-patch-1.jar:/home/kohsuke/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar'
- -protected
+-classpath '/home/kohsuke/ws/libzfs-java/target/checkout/target/classes:/home/kohsuke/ws/libzfs-java/target/checkout/target/test-classes:/home/kohsuke/.m2/repository/net/java/dev/jna/jna/3.0.3-patch-1/jna-3.0.3-patch-1.jar:/home/kohsuke/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar'
+ -encoding
+'ISO-8859-1'
+-protected
 -sourcepath
-'/home/kohsuke/ws/libzfs-java/src/test/java'
+'/home/kohsuke/ws/libzfs-java/target/checkout/src/test/java'
 -author
 -bottom
-'Copyright © 2008. All Rights Reserved.'
+'Copyright &#169; 2008. All Rights Reserved.'
 -charset
 'ISO-8859-1'
 -d
-'/home/kohsuke/ws/libzfs-java/target/site/testapidocs'
+'/home/kohsuke/ws/libzfs-java/target/checkout/target/site/testapidocs'
 -doctitle
-'libzfs-java 1.0-SNAPSHOT Test API'
+'libzfs-java 0.1 Test API'
 -use
 -version
 -windowtitle
-'libzfs-java 1.0-SNAPSHOT Test API'
+'libzfs-java 0.1 Test API'
