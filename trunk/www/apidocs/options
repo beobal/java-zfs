@@ -12,8 +12,8 @@
 -d
 '/home/kohsuke/ws/libzfs-java/target/checkout/target/site/apidocs'
 -doctitle
-'libzfs-java 0.2 API'
+'libzfs-java 0.3 API'
 -use
 -version
 -windowtitle
-'libzfs-java 0.2 API'
+'libzfs-java 0.3 API'

@@ -12,8 +12,8 @@
 -d
 '/home/kohsuke/ws/libzfs-java/target/checkout/target/site/testapidocs'
 -doctitle
-'libzfs-java 0.2 Test API'
+'libzfs-java 0.3 Test API'
 -use
 -version
 -windowtitle
-'libzfs-java 0.2 Test API'
+'libzfs-java 0.3 Test API'
