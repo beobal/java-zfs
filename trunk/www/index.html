@@ -19,27 +19,21 @@
                 <dl class=navgroup>
                     <dt>libzfs for Java</dt>
                     <dd><ul>
-
                             <li class="none">
                                 <strong>Overview</strong>
                             </li>
-
                             <li class="none">
                                 <a href="nonav/apidocs/index.html">Javadoc</a>
                             </li>
-
                             <li class="none">
                                 <a href="http://maven.dyndns.org/2/org/jvnet/libzfs/libzfs/">Download</a>
                             </li>
-
                             <li class="none">
                                 <a href="servlets/ProjectMailingListList">Mailing lists</a>
                             </li>
-
                             <li class="none">
                                 <a href="source/browse/zfs/">Source code</a>
                             </li>
-
                             <li class="none">
                                 <a href="servlets/ProjectIssues">Issues</a>
                             </li>
@@ -84,25 +78,36 @@
         </div>
         <div id="bodyColumn">
             <div id="contentBox">
-                <p>This project develops a Java wrapper of <a href="http://www.opensolaris.org/os/community/zfs/" class="externalLink">libzfs</a>
-                    , which is a native library in Solaris to manipulate ZFS. The goal is to expose all the capabilities of <tt>libzfs</tt>
-                    in Java-friendly binding.</p>
-                <p>With this library, you can write a program like the following to create a new file system:</p>
-                <div class="source"><pre>LibZFS zfs = new LibZFS();
+                <p>This project aims to develop a Java wrapper of <a href="http://www.opensolaris.org/os/community/zfs/" class="externalLink">libzfs</a>.
+                    libzfs is a Solaris native library and it's the primary interface
+                    for management application with Solaris' ZFS kernel module.</p>
+                <p>The goal of this project is to expose all the capabilities of
+                    <tt>libzfs</tt> in Java-friendly binding. ZFS for Java will
+                    not only provide Java entry-points to the functions defined
+                    in libzfs.so, but also will also encapsulate common functionality
+                    into a hierarchy of easy to use Java classes.</p>
+                <p>With this library, you'll be able to create a file system with
+                    a few lines like these:</p>
+                <div class="source">
+                    <pre>LibZFS zfs = new LibZFS();
 ZFSObject newFS = zfs.create(&quot;rpool/kohsuke/test&quot;, ZFSType.FILESYSTEM);
 newFS.mount();</pre>
                 </div>
-                <p>... or to destroy it:</p>
-                <div class="source"><pre>LibZFS zfs = new LibZFS();
+                <p>Destroying it will also be easy:</p>
+                <div class="source">
+                    <pre>LibZFS zfs = new LibZFS();
 ZFSObject existingFS = zfs.open(&quot;rpool/kohsuke/test&quot;);
 existingFS.unmount();
 existingFS.destroy();</pre>
                 </div>
-                <p>... or any other things you can do with <tt>libzfs</tt>
-                    , like querying file system information, create snapshots and/or clones, roll back, etc., etc.</p>
-                <p>The project is still very much a work in progress. If you are interested in helping us, please let us know so that we can add you as a committer. This project depends on <a href="https://jna.dev.java.net/" class="externalLink">JNA</a>
+                <p>... or any other things you can do with <tt>libzfs</tt>,
+                    like querying file system information, creating snapshots and/or clones,
+                    roll back, and so on.</p>
+                <p>The project is still very much a work in progress.
+                    If you are interested in helping us, please let us know
+                    so that we can add you as a committer.
+                    This project depends on <a href="https://jna.dev.java.net/" class="externalLink">JNA</a>
                     to bridge to the native code, so no JNI experience is required to hack the project.</p>
-
             </div>
         </div>
         <div class="clear">
@@ -111,8 +116,8 @@ existingFS.destroy();</pre>
         <div id="footer">
             <div class="xright">&#169;
                 2009
-                &nbsp;| Last Published: 03/18/2009
-                &nbsp;| Version: 0.5
+                &nbsp;| Last Published: 24/09/2009
+                &nbsp;| Version: 0.7
             </div>
             <div class="clear">
                 <hr/>
