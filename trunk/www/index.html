@@ -132,7 +132,7 @@ newFS.mount();</pre>
 <div class="source"><pre>LibZFS zfs = new LibZFS();
 ZFSObject existingFS = zfs.open(&quot;rpool/kohsuke/test&quot;);
 existingFS.unmount();
-existingFS.destory();</pre>
+existingFS.destroy();</pre>
 </div>
 <p>... or any other things you can do with <tt>libzfs</tt>
 , like querying file system information, create snapshots and/or clones, roll back, etc., etc.</p>
